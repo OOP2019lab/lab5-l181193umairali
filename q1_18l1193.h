@@ -15,6 +15,7 @@ public:
 	void print ();
 	void withdraw(int amount);
 	void deposit(int amount);
+	~bankAccount();
 	 
 };
 

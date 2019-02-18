@@ -14,8 +14,8 @@
  {
 	 
 	// cout<<"Name of user :"<<username<<endl;
-	 cout <<balance<<endl;
 	 cout<<"account number :"<<acctnum<<endl;
+	  cout <<balance<<endl;
 	 cout<<"The toptal num of transaction : "<<numoftransaction<<endl;
 	 for(int i=0;i<numoftransaction;i++){
 	 cout<<"Transaction :"<<transaction[i]<<endl;
@@ -69,6 +69,9 @@
 	  transaction = y;
 	  numoftransaction++;
 	 }
+ }
+ bankAccount::~bankAccount(){
+	 delete[] transaction;
  }
 
 
